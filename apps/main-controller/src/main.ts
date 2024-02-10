@@ -1,8 +1,10 @@
 import { NestFactory } from '@nestjs/core';
-import { MainControllerModule } from './main-controller.module';
+import { ServiceEntrypointModule } from './service-entrypoint/src';
 
 async function bootstrap() {
-  const app = await NestFactory.create(MainControllerModule);
+  const app = await NestFactory.create(ServiceEntrypointModule);
+
   await app.listen(3000);
 }
+
 bootstrap();
