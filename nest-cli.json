@@ -1,22 +1,31 @@
 {
   "$schema": "https://json.schemastore.org/nest-cli",
   "collection": "@nestjs/schematics",
-  "sourceRoot": "apps/main-app/src",
+  "sourceRoot": "apps/main-controller/src",
   "compilerOptions": {
     "deleteOutDir": true,
     "webpack": true,
-    "tsConfigPath": "apps/main-app/tsconfig.app.json"
+    "tsConfigPath": "apps/main-controller/tsconfig.app.json"
   },
   "monorepo": true,
-  "root": "apps/main-app",
+  "root": "apps/main-controller",
   "projects": {
-    "main-app": {
+    "main-controller": {
       "type": "application",
-      "root": "apps/main-app",
+      "root": "apps/main-controller",
       "entryFile": "main",
-      "sourceRoot": "apps/main-app/src",
+      "sourceRoot": "apps/main-controller/src",
       "compilerOptions": {
-        "tsConfigPath": "apps/main-app/tsconfig.app.json"
+        "tsConfigPath": "apps/main-controller/tsconfig.app.json"
+      }
+    },
+    "piscina-adapter": {
+      "type": "library",
+      "root": "libs/piscina-adapter",
+      "entryFile": "index",
+      "sourceRoot": "libs/piscina-adapter/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/piscina-adapter/tsconfig.lib.json"
       }
     }
   }

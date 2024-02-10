@@ -17,6 +17,9 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
-    "paths": {}
+    "paths": {
+      "@app/piscina-adapter": ["libs/piscina-adapter/src"],
+      "@app/piscina-adapter/*": ["libs/piscina-adapter/src/*"]
+    }
   }
 }
