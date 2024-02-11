@@ -1019,6 +1019,49 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nestjs/microservices@npm:^10.3.2":
+  version: 10.3.2
+  resolution: "@nestjs/microservices@npm:10.3.2"
+  dependencies:
+    iterare: "npm:1.2.1"
+    tslib: "npm:2.6.2"
+  peerDependencies:
+    "@grpc/grpc-js": "*"
+    "@nestjs/common": ^10.0.0
+    "@nestjs/core": ^10.0.0
+    "@nestjs/websockets": ^10.0.0
+    amqp-connection-manager: "*"
+    amqplib: "*"
+    cache-manager: "*"
+    ioredis: "*"
+    kafkajs: "*"
+    mqtt: "*"
+    nats: "*"
+    reflect-metadata: ^0.1.12 || ^0.2.0
+    rxjs: ^7.1.0
+  peerDependenciesMeta:
+    "@grpc/grpc-js":
+      optional: true
+    "@nestjs/websockets":
+      optional: true
+    amqp-connection-manager:
+      optional: true
+    amqplib:
+      optional: true
+    cache-manager:
+      optional: true
+    ioredis:
+      optional: true
+    kafkajs:
+      optional: true
+    mqtt:
+      optional: true
+    nats:
+      optional: true
+  checksum: 10c0/8e8819ae2239f42586c27b48b33762a41b536234adf1eac855bd0a1e95e5a939856feb6771053b51b047c038b5c013e9321b3d79f77235bfd10170e8bff3f93a
+  languageName: node
+  linkType: hard
+
 "@nestjs/platform-express@npm:^10.3.2":
   version: 10.3.2
   resolution: "@nestjs/platform-express@npm:10.3.2"
@@ -4880,6 +4923,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"kafkajs@npm:^2.2.4":
+  version: 2.2.4
+  resolution: "kafkajs@npm:2.2.4"
+  checksum: 10c0/6eece1f682a257955f647b6142430e87681d11bf01e9ebe0a73b4bc0653b8f970c48ba72a3b25fdbb4205cfbb36e5ef93d954b8f8c5f7767ae2b4693bdec9d88
+  languageName: node
+  linkType: hard
+
 "keyv@npm:^4.5.3":
   version: 4.5.4
   resolution: "keyv@npm:4.5.4"
@@ -5381,6 +5431,7 @@ __metadata:
     "@nestjs/cli": "npm:^10.3.2"
     "@nestjs/common": "npm:^10.3.2"
     "@nestjs/core": "npm:^10.3.2"
+    "@nestjs/microservices": "npm:^10.3.2"
     "@nestjs/platform-express": "npm:^10.3.2"
     "@nestjs/schematics": "npm:^10.1.1"
     "@nestjs/testing": "npm:^10.3.2"
@@ -5394,6 +5445,7 @@ __metadata:
     eslint-config-prettier: "npm:^9.1.0"
     eslint-plugin-prettier: "npm:^5.1.3"
     jest: "npm:^29.7.0"
+    kafkajs: "npm:^2.2.4"
     piscina: "npm:^4.3.1"
     prettier: "npm:^3.2.5"
     reflect-metadata: "npm:^0.2.1"
