@@ -27,6 +27,15 @@
       "compilerOptions": {
         "tsConfigPath": "libs/piscina-adapter/tsconfig.lib.json"
       }
+    },
+    "piscina-compute": {
+      "type": "application",
+      "root": "apps/piscina-compute",
+      "entryFile": "main",
+      "sourceRoot": "apps/piscina-compute/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/piscina-compute/tsconfig.app.json"
+      }
     }
   }
 }

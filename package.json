@@ -9,8 +9,10 @@
     "build": "nest build",
     "format": "prettier --write \"apps/**/*.ts\" \"libs/**/*.ts\"",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-    "start:dev": "nest start --watch",
-    "start:prod": "node dist/apps/main-app/main",
+    "start:dev-controller": "nest start main-controller --watch",
+    "build:controller": "nest build main-controller",
+    "start:dev-piscina-compute": "nest start piscina-compute --watch",
+    "build:piscina-compute": "nest build piscina-compute",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:e2e": "jest --config ./apps/main-app/test/jest-e2e.json"
