@@ -6,7 +6,7 @@ export const kafkaClientServerOptions: KafkaOptions = {
   options: {
     client: {
       clientId: 'compute',
-      brokers: ['localhost:9092'],
+      brokers: ['localhost:9094'],
     },
     producerOnlyMode: true,
     consumer: {

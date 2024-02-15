@@ -18,8 +18,18 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "paths": {
-      "@app/piscina-adapter": ["libs/piscina-adapter/src"],
-      "@app/piscina-adapter/*": ["libs/piscina-adapter/src/*"]
+      "@app/piscina-adapter": [
+        "libs/piscina-adapter/src"
+      ],
+      "@app/piscina-adapter/*": [
+        "libs/piscina-adapter/src/*"
+      ],
+      "@app/piscina-module": [
+        "libs/piscina-module/src"
+      ],
+      "@app/piscina-module/*": [
+        "libs/piscina-module/src/*"
+      ]
     }
   }
 }
