@@ -1,5 +1,6 @@
 import { Transport } from '@nestjs/microservices';
 import { KafkaOptions } from '@nestjs/microservices';
+import { Partitioners } from 'kafkajs';
 
 export const kafkaClientServerOptions: KafkaOptions = {
   transport: Transport.KAFKA,
@@ -11,6 +12,10 @@ export const kafkaClientServerOptions: KafkaOptions = {
     producerOnlyMode: true,
     consumer: {
       groupId: 'compute-consumer',
+      allowAutoTopicCreation: true,
+    },
+    producer: {
+      createPartitioner: Partitioners.LegacyPartitioner,
     },
   },
 };

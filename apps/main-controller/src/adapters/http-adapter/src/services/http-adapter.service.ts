@@ -7,6 +7,6 @@ export class HttpAdapterService {
   constructor(@Inject(KAFKA_CLIENT_PROVIDER) private readonly kafkaClient: ClientKafka) {}
 
   startCompute() {
-    this.kafkaClient.emit('start_compute', JSON.stringify('start compute'));
+    this.kafkaClient.emit('start_compute', JSON.stringify(`start compute ${Math.random()}`));
   }
 }

@@ -1,10 +1,10 @@
 import { Controller } from '@nestjs/common';
-import { EventPattern, Payload } from '@nestjs/microservices';
+import { MessagePattern, Payload } from '@nestjs/microservices';
 
 @Controller()
 export class KafkaController {
-  @EventPattern('start_compute')
-  handleCompute(@Payload() data: any) {
-    console.log(data);
+  @MessagePattern('start_compute')
+  async handleCompute(@Payload() data: any) {
+    console.log(`----------------------> ${data}`);
   }
 }

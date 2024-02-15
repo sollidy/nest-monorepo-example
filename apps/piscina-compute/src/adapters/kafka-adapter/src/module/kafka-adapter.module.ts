@@ -7,8 +7,8 @@ export class KafkaAdapterModule {
     return {
       global: true,
       module: KafkaAdapterModule,
-      providers: [KafkaController],
-      exports: [KafkaController],
+      controllers: [KafkaController],
+      exports: [],
     };
   }
 }
